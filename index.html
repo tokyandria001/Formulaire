@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscription</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Inscription</h2>
+        <form action="#" method="post" id="inscriptionForm" onsubmit="return validateForm()">
+            <input type="text" name="nom" id="nom" placeholder="Nom"><label for="">Le nom doit contenir au moins 2 lettres</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom"><label for="">Le prénom doit au moins contenir 2 lettres</label>
+            <input type="text" name="age" id="age" placeholder="Age"><label for="">L'âge doit être un entier supérieur ou égale à 10</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo"><label for="">Le pseudo doit contenir au moins 6 caractères</label>
+            <input type="email" name="email" id="email" placeholder="Adresse Email"><label for="">Veuillez saisir une adresse mail valide</label>
+            <input type="password" name="motdepasse" id="motdepasse" placeholder="Mot de passe"><label for="">Le mot de passe doit contenir au moins 6 caractères</label>
+            <input type="submit" value="S'inscrire">
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
